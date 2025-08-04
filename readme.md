@@ -57,7 +57,7 @@ npm run serve
 
 ## Estructrua del Proyecto 
 
-![Captura de ejecución](img/carpeta.png)
+![Captura de ejecución](img/estru.png)
 
 
 
