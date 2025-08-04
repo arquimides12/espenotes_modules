@@ -34,6 +34,7 @@ body {
 .banner-section {
   margin: 40px auto;
   max-width: 960px;
+  padding: 0 16px;
 }
 
 /* Contenedor en dos columnas */
@@ -89,7 +90,7 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive */
+/* Responsive para tablets y móviles */
 @media (max-width: 768px) {
   .split-card {
     flex-direction: column;
@@ -101,7 +102,29 @@ body {
     flex: 1 1 100%;
   }
 
+  .card-left img {
+    height: auto;
+  }
+
   .card-content {
     padding: 16px;
+  }
+
+  .banner-section {
+    margin: 20px auto;
+    padding: 0 8px;
+  }
+
+  .card-right .mdl-card__title-text {
+    font-size: 18px;
+  }
+
+  .mdl-layout__drawer .mdl-navigation__link {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .mdl-layout__drawer .mdl-layout-title {
+    font-size: 16px;
   }
 }
