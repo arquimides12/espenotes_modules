@@ -1,13 +1,16 @@
-# **ESPE Tasks**
+# **Plantilla Base para Progresive Web Apps (PWA) – ESPE**
 
-Este Laboratorio es una aplicación web para la gestión de tareas, donde puedes agregar, editar, marcar como completadas y eliminar tareas. Está desarrollado utilizando LitElement para la creación de componentes personalizados y Webpack para la construcción del proyecto.
+Este repositorio proporciona una **estructura base optimizada** para el desarrollo de aplicaciones web progresivas (PWA), ideal para proyectos personales, académicos o profesionales. Incluye servidor de desarrollo con recarga automática, herramientas de calidad de código y configuración básica de service worker y manifest.
 
-## **Tecnologías Utilizadas**
+## **Características**
 
-- **LitElement**: Framework para crear componentes web.
-- **Webpack**: Empaquetador de módulos.
-- **CSS**: Estilos para la interfaz de usuario.
-- **Git y GitHub**: Control de versiones y repositorio remoto.
+- Estructura modular de archivos (`src/`, `css/`, `js/`, `assets/`).
+- Configuración lista para desarrollo con `live-server`
+- Linting con `ESLint` y formateo automático con `Prettier`.
+- Scripts de automatización vía `npm`
+- Manifest y Service Worker funcionales
+- Diseño base con Material Design Lite (MDL)
+
 
 ## **Instalación**
 
@@ -18,7 +21,7 @@ Para instalar y configurar el proyecto en tu máquina local, sigue estos pasos:
 Si aún no has clonado el repositorio, utiliza el siguiente comando para clonarlo:
 
 ```bash
-git clone https://github.com/arquimides12/Lab2_U2.git
+git https://github.com/arquimides12/espenotes_modules.git 
 ```
 En mi caso sucedio esto ya que cree el repositorio despues.
 
@@ -27,23 +30,78 @@ Entra en el directorio del proyecto y ejecuta el siguiente comando para instalar
 
 ```bash
 npm install
-npm run serve
+npm run dev
 ```
-Esto abrirá la aplicación en http://localhost:8080.
+
+Esto abrirá la aplicación en: 
+```bash
+ http://127.0.0.1:8080/.
+``` 
+Esto abrirá la app en tu navegador mediante `live-server`, con recarga en tiempo real.
+
+- Para formatear el código automáticamente:
+
+```bash
+npm run format
+``` 
+- Para verificar errores de estilo y sintaxis: 
+
+```bash
+npm run lint
+``` 
+-Para simular entorno de producción:
+
+```bash
+npm run serve
+``` 
 
 ## Estructrua del Proyecto 
 
 ![Captura de ejecución](img/carpeta.png)
 
-## Componentes 
-En este laboratorio los componentes era a preferencia del desarrollador en este caso se 
-hicieron cinco dentro de la carpeta src los culaes son 
 
-![Captura de ejecución](img/components.png)
 
-## Conexión de Archivos
+## Reutilización en Nuevos Proyectos
 
-index.html: Este archivo cumple la función de entrada de la aplicación. Aquí se define la estructura básica de la página HTML y se incluyen los enlaces a los archivos CSS y JavaScript.
+Para usar esta plantilla en futuros proyectos:
+
+- Copia la estructura completa del repositorio.
+
+- Cambia el contenido de index.html, manifest.json y app.js según el nuevo proyecto.
+
+- Mantén package.json y los scripts para seguir utilizando el entorno automatizado.
+
+- Personaliza src/assets/icons/ con íconos propios.
+
+- Actualiza README.md según corresponda.
+
+## Recomendaciones 
+-  Usa extensiones como ESLint y Prettier en tu editor (VSCode) para mantener calidad de código en tiempo real.
+- Asegúrate de servir tu aplicación desde un entorno HTTPS para probar funcionalidades PWA como serviceWorker o instalación.
+- Puedes mejorar la estructura CSS usando un framework más robusto como Tailwind o Bootstrap si el proyecto lo requiere.
+
+## Licencia 
+
+MIT - Puedes usar libremente este código para fines personales, académicos o comerciales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```html
 <!DOCTYPE html>
